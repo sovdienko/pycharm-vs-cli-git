@@ -2,7 +2,7 @@ https://www.youtube.com/watch?v=sE_VjzX1BHo&t=108s
 
 #Show hidded files and detailed lists
 ls -la
-#Count of files
+#Count of fils
 ls folder10 | wc -l
 
 openssl rand -base64 10000 > "folder$(jot -r 1 10 19)/file$(jot -r 1 100 999).txt"
@@ -39,14 +39,17 @@ git push -u origin main
 git remote set-url origin https://github.com/sovdienko/pycharm-vs-cli-git.git
 
 
+#Add all changes files into commit
+git diff --name-only --diff-filter=M | xargs git add
+
+
+
 git push github master
 git push -u origin master
 
 git remote rm
 
-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
 
-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
 
 
 
